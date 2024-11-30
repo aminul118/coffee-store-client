@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 
 const SignIn = () => {
+ 
+
   return (
-    <div className="h-[calc(100vh-68px)] flex justify-center items-center">
+    <div
+      className="h-[calc(100vh-68px)] flex justify-center items-center "
+      data-aos="fade-right"
+    >
       <div className="card bg-base-100 w-full  max-w-md shrink-0 shadow-2xl">
         <form className="card-body ">
           <div className="form-control">
@@ -11,6 +16,7 @@ const SignIn = () => {
             </label>
             <input
               type="email"
+              name="email"
               placeholder="email"
               className="input input-bordered"
               required
@@ -22,6 +28,7 @@ const SignIn = () => {
             </label>
             <input
               type="password"
+              name="password"
               placeholder="password"
               className="input input-bordered"
               required
